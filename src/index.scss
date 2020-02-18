@@ -1,0 +1,24 @@
+@import './reset';
+
+body, html {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #F5F5F5;
+  color: #2f2f2f;
+  height: 100%;
+  overflow: hidden;
+}
+
+#content {
+  position: fixed;
+  top: 30%;
+  left: 10%;
+
+  #title {
+    font-size: 200%;
+    float: left;
+  }
+
+  img {
+    margin-left: 15px;
+  }
+}

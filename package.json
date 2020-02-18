@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "name": "pertapaan.com",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "rm -rf docs node_modules package-lock.json",
+    "build": "rm -rf docs && npm run build:css && cp src/index.html docs",
+    "build:prod": "rm -rf docs && npm run build:css:prod && cp src/index.html docs",
+    "build:css": "node-sass src/index.scss docs/index.css",
+    "build:css:prod": "node-sass src/index.scss docs/index.css --output-style compressed",
+    "watch:css": "chokidar './src/*.scss' -c 'npm run build:css'"
+  }
+}
