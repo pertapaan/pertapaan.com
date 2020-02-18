@@ -1,0 +1,11 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #F5F5F5;
+}
+
+#title {
+  position: fixed;
+  top: 30%;
+  left: 10%;
+  font-size: 3em;
+}
